@@ -1,0 +1,45 @@
+[tool.poetry]
+name = "filetime_from_git"
+version = "1.0"
+description = "Pelican plugin for setting articles' and pages' date according to git commit."
+readme = "README.rst"
+authors = ["Zhang Cheng <StephenPCG@gmail.com>", "Tilman Blumenbach <tilman+git@ax86.net>", "Justin Mayer <entroP@gmail.com>", "Chris Scutcher <chris.scutcher@ninebysix.co.uk>", "Tristan Miller <psychonaut@nothingisreal.com>", "Tomas <tomas.herman@gmail.com>", "Talha Mansoor <talha131@gmail.com>", "Michel Voßkuhle <m.vosskuhle@gmail.com>", "Michael Budde <mbudde@gmail.com>", "Lucas Cimon <lucas.cimon@gmail.com>", "Kyle Barlow <kb@kylebarlow.com>", "Jari Karppinen <jari.p.karppinen@gmail.com>", "Chris Scutcher <chris@scutcher.uk>", "Aufar Gilbran <aufargilbran@gmail.com>", "Aetf <7437103@gmail.com>"]
+keywords = ["pelican", "plugin"]
+repository = "https://github.com/schtobia/filetime_from_git"
+packages = [{ include = "pelican" }]
+include = ["CHANGELOG.md", "README.rst", "pelican"]
+
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Framework :: Pelican",
+    "Framework :: Pelican :: Plugins",
+    "Intended Audience :: End Users/Desktop",
+    "Operating System :: OS Independent",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[tool.poetry.urls]
+"Documentation" = "https://docs.getpelican.com/"
+"Funding" = "https://donate.getpelican.com/"
+"Source" = "https://github.com/schtobia/filetime_from_git"
+"Tracker" = "https://github.com/schtobia/filetime_from_git/issues"
+
+[tool.poetry.dependencies]
+python = "^3.7.0"
+gitpython = "^3.1.0"
+
+[tool.poetry.dev-dependencies]
+pelican = "^4.8.0"
+
+[tool.poetry.extras]
+markdown = ["markdown"]
+
+[tool.poetry.group.dev.dependencies]
+markdown = "^3.4.0"
+
+[build-system]
+requires = ["poetry>=1.0"]
+build-backend = "poetry.masonry.api"
+
